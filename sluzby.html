@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceník a Kontakt | Echoes of Tomorrow</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121214;
+            color: #f5f5f7;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #1f1c2c, #928dab);
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 4px solid #ff007f;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+        nav {
+            margin-top: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 16px;
+            margin: 0 5px;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background-color: #ff007f;
+        }
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        h2 {
+            color: #ff007f;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            font-size: 1.8rem;
+        }
+        h3 {
+            color: #aeaeb2;
+            margin-top: 30px;
+        }
+        p {
+            font-size: 1.1rem;
+            color: #d1d1d6;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #1c1c1e;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #2c2c2e;
+        }
+        th {
+            background-color: #2c2c2e;
+            color: #ff007f;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+        tr:hover {
+            background-color: #242426;
+        }
+        a {
+            color: #ff007f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            background-color: #1c1c1e;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        li {
+            padding: 8px 0;
+            border-bottom: 1px solid #2c2c2e;
+            color: #d1d1d6;
+        }
+        li:last-child {
+            border-bottom: none;
+        }
+        footer {
+            background-color: #1c1c1e;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+            border-top: 1px solid #333;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #8e8e93;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Echoes of Tomorrow</h1>
+        <nav>
+            <a href="index.html">Hlavní strana</a>
+            <a href="sluzby.html">Ceník a Kontakt</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Ceník našich služeb</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Služba</th>
+                        <th>Cena</th>
+                        <th>Poznámka</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Koncert na festivalu (90 min)</td>
+                        <td>25 000 Kč</td>
+                        <td>Vlastní zvukař v ceně</td>
+                    </tr>
+                    <tr>
+                        <td>Vystoupení na městských slavnostech</td>
+                        <td>20 000 Kč</td>
+                        <td>Zajistíme vlastní aparaturu</td>
+                    </tr>
+                    <tr>
+                        <td>Akustický set (firemní večírek)</td>
+                        <td>15 000 Kč</td>
+                        <td>Komornější atmosféra</td>
+                    </tr>
+                    <tr>
+                        <td>Soukromý koncert (svatba / oslava)</td>
+                        <td>18 000 Kč</td>
+                        <td>Repertoár na přání</td>
+                    </tr>
+                    <tr>
+                        <td>Nahrávání hostování ve studiu</td>
+                        <td>5 000 Kč / den</td>
+                        <td>Cena za spolupráci na vašem tracku</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Kontakt</h2>
+            <p><strong>Manažer kapely:</strong> Jan Novák</p>
+            <p><strong>Adresa:</strong> Hudební 123, 110 00 Praha 1</p>
+            <p><strong>Telefon:</strong> +420 123 456 789</p>
+            <p><strong>E-mail:</strong> <a href="mailto:info@echoesoftomorrow.cz">info@echoesoftomorrow.cz</a></p>
+            
+            <h3>Otevírací doba pro rezervace</h3>
+            <ul>
+                <li><strong>Pondělí až Pátek:</strong> 9:00 - 18:00</li>
+                <li><strong>Sobota:</strong> 10:00 - 14:00</li>
+                <li><strong>Neděle:</strong> Zavřeno (koncertujeme)</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Echoes of Tomorrow. Autor webu: Ondra (Kód: 19)</p>
+    </footer>
+
+</body>
+</html>
