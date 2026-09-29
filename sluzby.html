@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ceník a Kontakt | Echoes of Tomorrow</title>
+    <title>Ceník a Rezervace | Echoes of Tomorrow</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -51,6 +51,7 @@
             border-bottom: 2px solid #333;
             padding-bottom: 10px;
             font-size: 1.8rem;
+            margin-top: 40px;
         }
         h3 {
             color: #aeaeb2;
@@ -109,6 +110,69 @@
         li:last-child {
             border-bottom: none;
         }
+        
+        /* Styl pro rezervační formulář */
+        form {
+            background-color: #1c1c1e;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            margin-top: 20px;
+        }
+        .form-skupina {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #aeaeb2;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #2c2c2e;
+            background-color: #121214;
+            color: #f5f5f7;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 1rem;
+        }
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #ff007f;
+        }
+        .checkbox-skupina {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .checkbox-skupina input {
+            width: auto;
+            transform: scale(1.2);
+        }
+        button {
+            background: linear-gradient(135deg, #ff007f, #928dab);
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: opacity 0.3s;
+            width: 100%;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+        
         footer {
             background-color: #1c1c1e;
             text-align: center;
@@ -129,7 +193,7 @@
         <h1>Echoes of Tomorrow</h1>
         <nav>
             <a href="index.html">Hlavní strana</a>
-            <a href="sluzby.html">Ceník a Kontakt</a>
+            <a href="sluzby.html">Ceník a Rezervace</a>
         </nav>
     </header>
 
@@ -175,6 +239,57 @@
         </section>
 
         <section>
+            <h2>Nezávazná rezervace / Objednávka</h2>
+            <p>Máte zájem o naše vystoupení? Vyplňte formulář níže a my se vám ozveme zpět s potvrzením termínu.</p>
+            
+            <form action="#" method="post">
+                <div class="form-skupina">
+                    <label for="jmeno">Jméno a příjmení / Název firmy:</label>
+                    <input type="text" id="jmeno" name="jmeno" required placeholder="Např. Jan Novák">
+                </div>
+
+                <div class="form-skupina">
+                    <label for="email">E-mailový kontakt:</label>
+                    <input type="email" id="email" name="email" required placeholder="jmeno@email.cz">
+                </div>
+
+                <div class="form-skupina">
+                    <label for="sluzba">Typ akce (Služba):</label>
+                    <select id="sluzba" name="sluzba" required>
+                        <option value="">-- Vyberte typ akce --</option>
+                        <option value="festival">Koncert na festivalu</option>
+                        <option value="slavnosti">Městské slavnosti</option>
+                        <option value="akustik">Akustický set (večírek)</option>
+                        <option value="svatba">Soukromý koncert (svatba / oslava)</option>
+                        <option value="studio">Nahrávání ve studiu</option>
+                    </select>
+                </div>
+
+                <div class="form-skupina">
+                    <label for="datum">Kdy se akce koná (Datum):</label>
+                    <input type="date" id="datum" name="datum" required>
+                </div>
+
+                <div class="form-skupina">
+                    <label for="misto">Kde se akce koná (Místo / Město):</label>
+                    <input type="text" id="misto" name="misto" required placeholder="Např. Klub Lucerna, Praha">
+                </div>
+
+                <div class="form-skupina">
+                    <label for="zprava">Podrobnosti (čas vystoupení, speciální požadavky):</label>
+                    <textarea id="zprava" name="zprava" rows="4" placeholder="Napište nám bližší info o vaší akci..."></textarea>
+                </div>
+
+                <div class="form-skupina checkbox-skupina">
+                    <input type="checkbox" id="souhlas" name="souhlas" required>
+                    <label for="souhlas">Souhlasím se zpracováním údajů pro účely rezervace.</label>
+                </div>
+
+                <button type="submit">Odeslat poptávku</button>
+            </form>
+        </section>
+
+        <section>
             <h2>Kontakt</h2>
             <p><strong>Manažer kapely:</strong> Jan Novák</p>
             <p><strong>Adresa:</strong> Hudební 123, 110 00 Praha 1</p>
@@ -187,12 +302,6 @@
                 <li><strong>Sobota:</strong> 10:00 - 14:00</li>
                 <li><strong>Neděle:</strong> Zavřeno (koncertujeme)</li>
             </ul>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Echoes of Tomorrow. Autor webu: Ondra (Kód: 19)</p>
-    </footer>
 
 </body>
 </html>
