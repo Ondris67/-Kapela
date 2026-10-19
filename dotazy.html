@@ -4,120 +4,104 @@
     <meta charset="UTF-8">
     <title>Časté dotazy | Echoes of Tomorrow</title>
     <style>
-        /* Sjednocení stylu podle hlavní stránky */
         body {
-            background-color: #121212;
-            color: #ffffff;
-            font-family: sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121214;
+            color: #f5f5f7;
             margin: 0;
             padding: 0;
-            text-align: center;
+            line-height: 1.6;
         }
-
-        /* Horní záhlaví */
         header {
-            background: linear-gradient(to bottom, #30233b, #121212);
-            padding: 40px 20px 20px 20px;
-            border-bottom: 3px solid #e91e63;
+            background: linear-gradient(135deg, #1f1c2c, #928dab);
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 4px solid #ff007f;
         }
-
         header h1 {
-            font-size: 36px;
-            text-transform: uppercase;
+            margin: 0;
+            font-size: 3rem;
             letter-spacing: 2px;
-            margin: 0 0 20px 0;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
         }
-
-        /* Navigace */
+        nav {
+            margin-top: 20px;
+        }
         nav a {
-            color: #ffffff;
+            color: #fff;
             text-decoration: none;
-            margin: 0 15px;
             font-weight: bold;
-            font-size: 14px;
+            padding: 8px 16px;
+            margin: 0 5px;
+            border-radius: 4px;
+            transition: background 0.3s;
         }
-
         nav a:hover {
-            color: #e91e63;
+            background-color: #ff007f;
         }
-
-        /* Hlavní obsah pod čarou */
         main {
-            max-width: 800px;
+            max-width: 1000px;
             margin: 40px auto;
             padding: 0 20px;
-            text-align: left;
         }
-
-        main h1 {
-            color: #e91e63;
-            font-size: 28px;
-            margin-bottom: 10px;
+        h2 {
+            color: #ff007f;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            font-size: 1.8rem;
         }
-
-        main h2 {
-            color: #e91e63;
-            font-size: 22px;
-            margin-top: 30px;
-            margin-bottom: 10px;
+        p {
+            font-size: 1.1rem;
+            color: #d1d1d6;
         }
-
-        p, li {
-            color: #cccccc;
-            line-height: 1.6;
-            font-size: 15px;
+        .galerie {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+            margin-top: 20px;
         }
-
-        ol {
-            padding-left: 20px;
+        .galerie-polozka {
+            background-color: #1c1c1e;
+            border-radius: 8px;
+            overflow: hidden;
+            width: calc(33.333% - 14px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
         }
-
-        /* Stylování tabulky */
-        table {
+        .galerie-polozka:hover {
+            transform: scale(1.03);
+        }
+        .galerie-polozka img {
             width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
-            background-color: #1a1a1a;
-        }
-
-        th, td {
-            padding: 12px;
-            border: 1px solid #333333;
-            text-align: left;
-        }
-
-        th {
-            background-color: #26182e;
-            color: #e91e63;
-        }
-
-        /* Styl obrázku */
-        .foto-sekce {
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        .foto-sekce img {
-            border: 1px solid #333333;
-            max-width: 100%;
-            height: auto;
+            height: 200px;
+            object-fit: cover;
             display: block;
-            margin: 15px auto;
         }
-
-        /* Patička */
-        footer {
-            border-top: 1px solid #222222;
-            padding: 20px;
-            font-size: 12px;
-            color: #666666;
-            margin-top: 60px;
+        .galerie-polozka p {
+            font-size: 0.95rem;
+            padding: 15px;
+            margin: 0;
             text-align: center;
+            color: #aeaeb2;
         }
-
-        footer a {
-            color: #e91e63;
-            text-decoration: none;
+        footer {
+            background-color: #1c1c1e;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+            border-top: 1px solid #333;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #8e8e93;
+        }
+        @media (max-width: 768px) {
+            .galerie-polozka {
+                width: 100%;
+            }
         }
     </style>
 </head>
