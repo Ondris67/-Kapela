@@ -2,71 +2,193 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <title>Časté dotazy | Naše Kapela</title>
+    <title>Časté dotazy | Echoes of Tomorrow</title>
+    <style>
+        /* Sjednocení stylu podle hlavní stránky */
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Horní záhlaví */
+        header {
+            background: linear-gradient(to bottom, #30233b, #121212);
+            padding: 40px 20px 20px 20px;
+            border-bottom: 3px solid #e91e63;
+        }
+
+        header h1 {
+            font-size: 36px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 0 0 20px 0;
+        }
+
+        /* Navigace */
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #e91e63;
+        }
+
+        /* Hlavní obsah pod čarou */
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            text-align: left;
+        }
+
+        main h1 {
+            color: #e91e63;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        main h2 {
+            color: #e91e63;
+            font-size: 22px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        p, li {
+            color: #cccccc;
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+        ol {
+            padding-left: 20px;
+        }
+
+        /* Stylování tabulky */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background-color: #1a1a1a;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #333333;
+            text-align: left;
+        }
+
+        th {
+            background-color: #26182e;
+            color: #e91e63;
+        }
+
+        /* Styl obrázku */
+        .foto-sekce {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .foto-sekce img {
+            border: 1px solid #333333;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 15px auto;
+        }
+
+        /* Patička */
+        footer {
+            border-top: 1px solid #222222;
+            padding: 20px;
+            font-size: 12px;
+            color: #666666;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #e91e63;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Navigace (Bod 7) -->
-    <nav>
-        <a href="index.html">Zpět na hlavní stránku</a>
-    </nav>
+    <!-- Záhlaví s logem a menu z obrázku -->
+    <header>
+        <h1>Echoes of Tomorrow</h1>
+        <nav>
+            <a href="index.html">Hlavní strana</a>
+            <a href="#cenik">Ceník a Kontakt</a>
+            <a href="dotazy.html" style="color: #e91e63;">Časté dotazy</a>
+        </nav>
+    </header>
 
-    <!-- Hlavní nadpis a úvod (Bod 2) -->
-    <h1>Časté dotazy</h1>
-    <p>Zde najdete odpovědi na nejčastější dotazy našich fanoušků ohledně koncertů, vstupenek a nového alba.</p>
+    <!-- Samotný text a struktura stránky -->
+    <main>
+        <h1>Časté dotazy</h1>
+        <p>Zde najdete odpovědi na nejčastější dotazy našich fanoušků ohledně koncertů, vstupenek a našeho merche.</p>
 
-    <!-- Sekce s dotazy (Bod 3) -->
-    <h2>Hrajete také na svatbách nebo soukromých oslavách?</h2>
-    <p>Ano, rádi zahrajeme i na vaší soukromé akci nebo svatbě. Napište nám včas přes kontaktní formulář, abychom si zarezervovali termín.</p>
+        <h2>Hrajete také na svatbách nebo soukromých oslavách?</h2>
+        <p>Ano, rádi zahrajeme i na vaší soukromé akci nebo svatbě. Napište nám včas přes kontaktní formulář, abychom si zarezervovali termín.</p>
 
-    <h2>Kde si můžeme koupit váš oficiální merch?</h2>
-    <p>Trička, CD a mikiny prodáváme vždy přímo na našich koncertech u stánku. Online objednávky momentálně spouštíme přes náš Instagram.</p>
+        <h2>Kde si můžeme koupit váš oficiální merch?</h2>
+        <p>Trička, CD a mikiny prodáváme vždy přímo na našich koncertech u stánku. Online objednávky momentálně spouštíme přes náš Instagram.</p>
 
-    <h2>V kolik hodin většinou začíná váš koncert?</h2>
-    <p>Přesný čas najdete vždy v programu u konkrétní události. Obvykle ale začínáme hrát přibližně hodinu po otevření klubu.</p>
+        <h2>V kolik hodin většinou začíná váš koncert?</h2>
+        <p>Přesný čas najdete vždy v programu u konkrétní události. Obvykle ale začínáme hrát přibližně hodinu po otevření klubu.</p>
 
-    <!-- Otázka s postupem (Bod 4) -->
-    <h2>Jak si mohu zarezervovat lístky na koncert?</h2>
-    <p>Postup pro získání vstupenek na naše turné je velmi jednoduchý:</p>
-    <ol>
-        <li>V sekci Koncerty si vyberete město, které máte nejblíže.</li>
-        <li>Kliknete na odkaz, který vás přesměruje do sítě Ticketportal.</li>
-        <li>Zvolíte počet lístků, zaplatíte online a vstupenky vám dorazí do e-mailu.</li>
-    </ol>
+        <h2>Jak si mohu zarezervovat lístky na koncert?</h2>
+        <p>Postup pro získání vstupenek na naše turné je velmi jednoduchý:</p>
+        <ol>
+            <li>V sekci Koncerty si vyberete město, které máte nejblíže.</li>
+            <li>Kliknete na odkaz, který vás přesměruje do sítě Ticketportal.</li>
+            <li>Zvolíte počet lístků, zaplatíte online a vstupenky vám dorazí do e-mailu.</li>
+        </ol>
 
-    <!-- Tabulka (Bod 5) - Ceník vystoupení / merche -->
-    <h2>Ceník našeho merche na koncertech</h2>
-    <table>
-        <tr>
-            <th>Předmět</th>
-            <th>Cena</th>
-            <th>Dostupnost</th>
-        </tr>
-        <tr>
-            <td>Oficiální tričko k albu</td>
-            <td>450 Kč</td>
-            <td>S, M, L, XL</td>
-        </tr>
-        <tr>
-            <td>Nové CD (podepsané)</td>
-            <td>300 Kč</td>
-            <td>Skladem</td>
-        </tr>
-        <tr>
-            <td>Placka / Nalepka</td>
-            <td>50 Kč</td>
-            <td>Dostatek</td>
-        </tr>
-    </table>
+        <h2 id="cenik">Ceník našeho merche na koncertech</h2>
+        <table>
+            <tr>
+                <th>Předmět</th>
+                <th>Cena</th>
+                <th>Dostupnost</th>
+            </tr>
+            <tr>
+                <td>Oficiální tričko k albu</td>
+                <td>450 Kč</td>
+                <td>S, M, L, XL</td>
+            </tr>
+            <tr>
+                <td>Nové CD (podepsané)</td>
+                <td>300 Kč</td>
+                <td>Skladem</td>
+            </tr>
+            <tr>
+                <td>Placka / Nálepka</td>
+                <td>50 Kč</td>
+                <td>Dostatek</td>
+            </tr>
+        </table>
 
-    <!-- Obrázek s alt (Bod 6) -->
-    <h2>Fotka z našeho posledního koncertu</h2>
-    <p>Takhle to vypadalo na našem minulém vyprodaném vystoupení. Děkujeme za skvělou atmosféru!</p>
-    <img src="kapela.jpg" alt="Členové kapely hrají na pódiu před jásajícím publikem pod barevnými světly" width="600">
+        <div class="foto-sekce">
+            <h2>Fotka z našeho posledního koncertu</h2>
+            <p>Takhle to vypadalo na našem minulém vyprodaném vystoupení. Děkujeme za skvělou atmosféru!</p>
+            <img src="kapela.jpg" alt="Členové kapely Echoes of Tomorrow hrají na pódiu před jásajícím publikem pod barevnými světly" width="600">
+        </div>
+    </main>
 
-    <!-- Bonusová patička (Bonus) -->
+    <!-- Patička přesně podle předlohy -->
     <footer>
-        <p>&copy; 2026 Naše Kapela. Pro booking pište na <a href="mailto:booking@nasekapela.cz">booking@nasekapela.cz</a>.</p>
+        <p>&copy; 2026 Echoes of Tomorrow. Autor webu: Ondra (Kód: 19). Pro booking pište na <a href="mailto:booking@echoesoftomorrow.cz">booking@echoesoftomorrow.cz</a>.</p>
     </footer>
 
 </body>
